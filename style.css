@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pagina-total{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 18, 65);
+    color: aliceblue;
+}
+/*Diseño del header*/
+.pino{
+    background-color: rgb(16, 16, 42);
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.maimi{
+    font-size: 25px;
+}
+.maimi span {
+    color: darkred;
+
+}
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.menu .difere{
+    color: darkred;
+}
+.menu a:hover{
+    background-color: rgb(90, 19, 19);
+    color: aliceblue;
+    transition: ease-in .4s;
+}
+
+/*pagina maestra*/
+.maestra{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    background-color: rgb(18, 18, 65);
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+span{
+    color: darkred;
+}
+.maestra img{
+    width: 300px;
+    height: 400px;
+    border: 6px solid darkred;
+    z-index: 1;
+}
+/*Informacion*/
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+.sobre img{
+    width: 500px;
+    height: 400px;
+    padding-left: 200px;
+
+    padding-top: 20px;
+    grid-column: 1/5;
+}
+.sobre-mai{
+    grid-column: 5/10;
+    padding: 3em;
+}
+.sobre-mai h2{
+    font-size: 2em;
+    color: rgb(18, 18, 65);
+}
+.divisor{
+    height: 4px;
+    width: 60px;
+    background-color: darkred;
+    margin-top: 10px;
+    margin-bottom: 1em;
+}
+
+/*Footer*/
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(18, 18, 65);
+}
+.pie-con h2{
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+.pie-con h5{
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
